@@ -1,5 +1,5 @@
 import {Card, CardHeader, CardBody, Image} from "@nextui-org/react"
-import './page.css'
+import './assets/styles.css'
 
 const HomePage = () => {
     return (
@@ -9,9 +9,11 @@ const HomePage = () => {
                 <div className="mostrar">
                     <div className="left-content">
                         <br/>
+                        <br/>
                         <Image src="/homepage.jpg" alt="Portada" width={640} height={536}/>
                     </div>
                     <div className="right-content" >
+                        <br/>
                         <h1>Carlos Santana</h1>
 
                         <div className="col" style={{fontSize: "20px"}}>
@@ -78,10 +80,8 @@ const HomePage = () => {
                                     <Image isZoomed alt="Card background" className="object-cover rounded-xl" src="/insignia5.jpg" width={120} />
                                 </CardBody>
                             </Card>
-
-
                         </div>
-
+                    <br/>
                     </div>
                     <br/>
 

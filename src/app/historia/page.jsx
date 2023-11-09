@@ -16,9 +16,8 @@ const Store = () => {
                         con una mirada hacia los clientes, de lo que desean y -a mi parecer- de lo que necesitan.
                         <br />
                         <br />
-                        Adicionalmente, comienzo con el desarrollo de una escuela de programación para jóvenes que cursen enseñanza
-                        media, de manera que terminen sus estudios con herramientas digitales que les permitan comenzar con el
-                        desarrollo de aplicaciones web.
+                        Adicionalmente, comienzo con el desarrollo de una escuela de programación para jóvenes, de manera que comiencen
+                        con herramientas digitales que les permitan el desarrollo de aplicaciones web.
                         <br/>
                         <br/>
                         <br/>
@@ -26,7 +25,7 @@ const Store = () => {
                         <br/>
                         <br/>
                         <br/>
-                        <a href="#2" className="p-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3" style={{width: "200px"}}>Continuar leyendo</a>
+                        <a href="#2" className="" style={{width: "200px"}}>Continuar leyendo</a>
                     </div>
                     <div className="w-1/2 pr-20">
                         <br/>
@@ -64,7 +63,7 @@ const Store = () => {
                         <br/>
                         <br/>
                         <br/>
-                        <a href="#3" className="p-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3" style={{width: "200px"}}>Continuar leyendo</a>
+                        <a href="#3" className="" style={{width: "200px"}}>Continuar leyendo</a>
                     </div>
                     <div className="w-1/2 pr-20">
                         <br/>
@@ -100,7 +99,7 @@ const Store = () => {
                         <br/>
                         <br/>
                         <br/>
-                        <a href="#1" className="p-2 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3" style={{width: "200px"}}>Subir</a>
+                        <a href="#1" className="" style={{width: "200px"}}>Subir</a>
                     </div>
                     <div className="w-1/2 pr-20">
                         <br/>
