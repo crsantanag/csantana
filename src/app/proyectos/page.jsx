@@ -1,11 +1,12 @@
 import Image from 'next/image'
+import '../assets/styles.css'
 
 const Proyectos = () => {
     return (
         <>
         <section id="1" style={{backgroundColor: "white"}}>
-            <div className="flex">
-                <div className="flex">
+            <div className="flex border border-primary-subtle ">
+
                     <div className="w-1/2 px-20" style={{fontSize: "18px"}}>
                         <br />
                         <h2>Landing page de Negocio</h2>
@@ -35,6 +36,7 @@ const Proyectos = () => {
                             Siguiente proyecto
                         </a>
                     </div>
+
                     <div className="w-1/2 pr-20">
                         <br/>
                         <Image src="/01.jpg" alt="Proyecto 1" width={640} height={570}/>
@@ -43,7 +45,7 @@ const Proyectos = () => {
                         <br />
                         <br />
                     </div>
-                </div>
+
             </div>
             <br />
             <br />
