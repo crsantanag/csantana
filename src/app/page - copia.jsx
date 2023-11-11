@@ -5,15 +5,16 @@ const HomePage = () => {
     return (
         <>
 
-            <div style={{backgroundColor: "white"}}>
-            <div className="flex flex-col md:flex-row">
-                <div className="w-full md:w-1/2 px-5">
+            <div>
+                <div className="mostrar">
+                    <div className="left-content">
+                        <br/>
                         <br/>
                         <Image src="/homepage.jpg" alt="Portada" width={640} height={536}/>
                         <br/>
                         <br/>
                     </div>
-                    <div className="w-full md:w-1/2 px-5" >
+                    <div className="right-content" >
                         <br/>
                         <h1>Carlos Santana</h1>
 

@@ -28,14 +28,13 @@ const Proyectos = () => {
                         d. Footer Sección que incluye todas las áreas del sitio, incluyendo redes sociales.<br/>
                     </div>
                     <br/>
-                    <strong>Tecnologías usadas:</strong>
+                    <strong>Tecnologías usadas:</strong> <br/> <br/>
                     <div>
                         <Image src="/p1.jpg" alt="Skill 1" width={140} height={75}/>
                     </div>
                     <br/>
                     <br/> 
-                    <br/>
-                    <button type="button" className="p-2  bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>
+                    <button type="button" className="p-2  bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "195px"}}>
                         Ir al demo
                     </button> 
                     <br/> 
@@ -74,15 +73,14 @@ const Proyectos = () => {
                     - Tiene una sección para modificar elementos<br/>
                     - Tiene una sección para ver todos los elementos creados<br/>
                     <br/>
+                    <strong>Tecnologías usadas:</strong> <br/> <br/>
                     <div>
                         <Image src="/p2.jpg" alt="Skill 2" width={215} height={75}/>
                     </div>
                     <br/>
                     <br/>
                     <br/>
-                    <br/>
-                    <br/>
-                    <br/>
+
                     <button type="button" className="p-2  bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>
                         Ir al demo
                     </button> 
@@ -123,10 +121,10 @@ const Proyectos = () => {
                         - Utiliza Chart.js para el desarrollo de gráficas.<br/>
                         - Realiza una conexión a una API externa para extraer datos.<br/>
                     <br/>
+                    <strong>Tecnologías usadas:</strong>
                     <div>
                         <Image src="/p3.jpg" alt="Skill 3" width={215} height={75}/>
                     </div>
-                    <br/>
                     <br/>
                     <br/>
                     <br/>
@@ -171,13 +169,14 @@ const Proyectos = () => {
                         <br/>
                         Tecnología: Express, Vite + React.js, Componentes bajo Hooks, CSS, Cloud Firestore para el manejo de datos<br/>
                         <br/>
+                        <strong>Tecnologías usadas:</strong>                     <br/>
                     <div>
                         <Image src="/p4.jpg" alt="Skill 4" width={215} height={75}/>
                     </div>
                     <br/>
                     <br/>
                     <br/>
-                    <button type="button" className="p-2  bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>
+                    <button type="button" className="p-2 bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>
                         Ir al demo
                     </button> 
                     <br/> 
