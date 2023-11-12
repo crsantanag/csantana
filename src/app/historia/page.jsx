@@ -7,7 +7,7 @@ const Store = () => {
 
         <section id="1">
             <div className="flex flex-col md:flex-row py-5">
-                <div className="w-full md:w-1/2 px-20 text-lg opacity-80" >
+                <div className="w-full md:w-1/2 sm:px-5 md:px-20  text-lg opacity-80 pb-10">
                     <strong>Por qué Full Stack Developer</strong>
                     <br/>
                     <br/>
@@ -21,6 +21,7 @@ const Store = () => {
                     <br/>
                     <br/>
                     <strong><a href="#2" className="opacity-100 p-4 bg-black text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>Continuar leyendo</a></strong>
+
                 </div>
                 <div className="w-full md:w-1/2 px-20" >
                     <Image src="/spot1.jpg" alt="Historia 1" width={640} height={570}/>
@@ -37,7 +38,7 @@ const Store = () => {
             <br/>
             <br/>
             <div className="flex flex-col md:flex-row py-5">
-                <div className="w-full md:w-1/2 px-20 text-lg opacity-80" >
+                <div className="w-full md:w-1/2 px-20 text-lg opacity-80 pb-10" >
                     <strong>2021 - 1994</strong>
                     <br />
                     <br/>
@@ -66,7 +67,7 @@ const Store = () => {
             <br/>
             <br/>
             <div className="flex flex-col md:flex-row py-5">
-                <div className="w-full md:w-1/2 px-20 text-lg opacity-80" >
+                <div className="w-full md:w-1/2 px-20 text-lg opacity-80 pb-10" >
                     <strong>1994 - 1984</strong>
                     <br />
                     <br />
@@ -83,7 +84,6 @@ const Store = () => {
                     <br/>
                     <br />
                     <strong><a href="#1" className="p-4 bg-black text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start opacity-100" style={{width: "200px"}}>ir al comienzo</a></strong>
-                    <br />
                 </div>
                 <div className="w-full md:w-1/2 px-20" >
                     <br/>
