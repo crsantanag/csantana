@@ -32,8 +32,9 @@ export default function NavBar () {
             </NavbarContent>
             <div className="flex items-center bg-slate-200 sm:flex gap-2 space-x-2">
                 <a href="https://www.linkedin.com/in/carlos-santana-11019014/" target="_blank" rel="noopener noreferrer"> <Image src="/logo-in.jpg"  width={35} height={35} alt="Logo de Linked In"/> </a>
+                <a href="https://github.com/crsantanag" target="_blank" rel="noopener noreferrer"> <Image src="/logo-github.jpg"  width={35} height={35} alt="Logo de GitHub"/> </a>
                 <a href="mailto:carlos.santana.gacitua@gmail.com"> <Image src="/logo-email.png"  width={35} height={35} alt="Logo de eMail"/> </a>
-			</div>
+            </div>
         </Navbar>
     );
 }
