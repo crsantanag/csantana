@@ -4,15 +4,12 @@ import '../assets/styles.css'
 const Proyectos = () => {
     return (
         <>
-        <section id="1" style={{backgroundColor: "white"}}>
-            <div className="flex flex-col md:flex-row">
+        <section id="1">
+            <div className="flex flex-col md:flex-row py-4">
                 <div className="w-full md:w-1/2 px-20" style={{fontSize: "18px"}}>
-                    <h2>Landing page de Negocio</h2>
-                    <br/>
-                    <Image src="/01.jpg" alt="Proyecto 1" width={640} height={570}/>
-                    <br/>
+                    <strong>Landing page de Negocio</strong>
+                    <Image className="py-2" src="/01.jpg" alt="Proyecto 1" width={640} height={570}/>
                 </div>
-
                 <div className="w-full md:w-1/2 px-20">
                     Este proyecto contiene una sola página que permite:<br/><br/>
                     - Mensajes del negocio (¿qué se vende?) <br/>
@@ -26,9 +23,9 @@ const Proyectos = () => {
                         d. Footer Sección que incluye todas las áreas del sitio, incluyendo redes sociales.<br/>
                     </div>
                     <br/>
-                    <strong>Tecnologías usadas:</strong> <br/> <br/>
+                    <strong>Tecnologías usadas:</strong> <br/>
                     <div>
-                        <Image src="/p1.jpg" alt="Skill 1" width={140} height={75}/>
+                        <Image className="py-2" src="/p1.jpg" alt="Skill 1" width={140} height={75}/>
                     </div>
                     <br/>
                     <br/> 
@@ -50,17 +47,15 @@ const Proyectos = () => {
             <br/>
         </section>
 
-        <section id="2" style={{backgroundColor: "white"}}>
+        <section id="2">
             <br/>
             <br/>
             <br/>
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row py-4">
                 <div className="w-full md:w-1/2 px-20" style={{fontSize: "18px"}}>
                     <br/>
-                    <h2>Aplicación CRUD</h2>
-                    <br/>
-                    <Image src="/02.jpg" alt="Proyecto 2" width={640} height={570}/>
-                    <br/>
+                    <strong>Aplicación CRUD</strong>
+                    <Image className="py-2" src="/02.jpg" alt="Proyecto 2" width={640} height={570}/>
                 </div>
                 <div className="w-full md:w-1/2 px-20">
                     <br/>
@@ -74,13 +69,12 @@ const Proyectos = () => {
                     - Tiene una sección para modificar elementos<br/>
                     - Tiene una sección para ver todos los elementos creados<br/>
                     <br/>
-                    <strong>Tecnologías usadas:</strong> <br/> <br/>
+                    <strong>Tecnologías usadas:</strong> <br/>
                     <div>
-                        <Image src="/p2.jpg" alt="Skill 2" width={215} height={75}/>
+                        <Image className="py-5" src="/p2.jpg" alt="Skill 2" width={215} height={75}/>
                     </div>
                     <br/>
-                    <br/>
-                    <br/>
+                    <br/> 
                     <a href="https://crsantanag.github.io/CRUD/" target="_blank" rel="noopener noreferrer">
                         <button type="button" className="p-2  bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>
                             Ir al demo
@@ -97,16 +91,15 @@ const Proyectos = () => {
             </div>
         </section>
 
-        <section id="3" style={{backgroundColor: "white"}}>
+        <section id="3">
             <br/>
             <br/>
             <br/>
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row py-4">
                 <div className="w-full md:w-1/2 px-20" style={{fontSize: "18px"}}>
                     <br/>
-                    <h2>Tablero de Datos (Dashboard)</h2>
-                    <br/>
-                    <Image src="/03.jpg" alt="Proyecto 3" width={640} height={570}/>
+                    <strong>Tablero de Datos (Dashboard)</strong>
+                    <Image className="py-2" src="/03.jpg" alt="Proyecto 3" width={640} height={570}/>
                     <br/>
                 </div>
                 <div className="w-full md:w-1/2 px-20">
@@ -125,7 +118,7 @@ const Proyectos = () => {
                     <br/>
                     <strong>Tecnologías usadas:</strong>
                     <div>
-                        <Image src="/p3.jpg" alt="Skill 3" width={215} height={75}/>
+                        <Image className="py-2" src="/p3.jpg" alt="Skill 3" width={215} height={75}/>
                     </div>
                     <br/>
                     <br/>
@@ -146,23 +139,20 @@ const Proyectos = () => {
             </div>
         </section>
 
-        <section id="4" style={{backgroundColor: "white"}}>
+        <section id="4">
             <br/>
             <br/>
             <br/>
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row py-4">
                 <div className="w-full md:w-1/2 px-20" style={{fontSize: "18px"}}>
                     <br/>
-                    <h2>Aplicación Restaurante</h2>
-                    <br/>
-                    <Image src="/04.jpg" alt="Proyecto 4" width={640} height={593}/>
-                    <br/>
+                    <strong>Aplicación Restaurante</strong>
+                    <Image className="py-2" src="/04.jpg" alt="Proyecto 4" width={640} height={593}/>
                 </div>
                 <div className="w-full md:w-1/2 px-20">
                     <br/>
                     Sus características contemplan:
-                        <br/>
-                        <br/>
+                    <div className="pt-3">
                         - Una página sobre información principal del restaurante.<br/>
                         - Una página que  muestra el menú completo del restaurante<br/>
                         - Un formulario de contacto<br/>
@@ -170,12 +160,13 @@ const Proyectos = () => {
                         - Una página que permite reservar on-line una mesa en una hora y fecha específica para uno o más comensales<br/>
                         - Una página con artículos (blogs)<br/>
                         - Adaptado a móviles<br/>
-                        <br/>
-                        Tecnología: Express, Vite + React.js, Componentes bajo Hooks, CSS, Cloud Firestore para el manejo de datos<br/>
-                        <br/>
-                        <strong>Tecnologías usadas:</strong>                     <br/>
+                    </div>
+                    <br/>
+                    Tecnología: Express, Vite + React.js, Componentes bajo Hooks, CSS, Cloud Firestore para el manejo de datos<br/>
+                    <br/>
+                    <strong>Tecnologías usadas:</strong>
                     <div>
-                        <Image src="/p4.jpg" alt="Skill 4" width={215} height={75}/>
+                        <Image className="py-2" src="/p4.jpg" alt="Skill 4" width={215} height={75}/>
                     </div>
                     <br/>
                     <br/>
@@ -196,40 +187,40 @@ const Proyectos = () => {
             </div>
         </section>
 
-        <section id="5" style={{backgroundColor: "white"}}>
+        <section id="5">
             <br/>
             <br/>
             <br/>
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row py-4">
                 <div className="w-full md:w-1/2 px-20" style={{fontSize: "18px"}}>
                     <br/>
-                    <h2>Aplicación e-Commerce</h2>
-                    <br/>
-                    <Image src="/05.jpg" alt="Proyecto 5" width={640} height={593}/>
-                    <br/>
+                    <strong>Aplicación e-Commerce</strong>
+                    <Image className="py-2" src="/05.jpg" alt="Proyecto 5" width={640} height={593}/>
                 </div>
                 <div className="w-full md:w-1/2 px-20">
                     <br/>
                     Sus características contemplan:<br/>
-                    <br/>
-                    - Un catálogo de productos<br/>
-                    - Un carrito de compras<br/>
-                    - Una pasarela de pago (puntualmente PayPal, con la versión de pruebas)<br/>
-                    - Autenticación (registro de usuario e inicio de sesión, a través de JWT)<br/>
-                    - Autorización (zona privada donde el usuario pueda ver su perfil)<br/>
-                    - Adaptado a móviles<br/>
-                    <br/>
-                    Tecnologías:<br/>
-                    FRONTEND<br/>
-                    - ReactJS<br/>
-                    - Context API (Manejo de estados)<br/>
-                    BACKEND<br/>
-                    - Node con ExpressJS<br/>
-                    BASE DE DATOS<br/>
-                    - MongoDB<br/>
-                    <br/>
+                    <div className="pt-3">
+                        - Un catálogo de productos<br/>
+                        - Un carrito de compras<br/>
+                        - Una pasarela de pago (puntualmente PayPal, con la versión de pruebas)<br/>
+                        - Autenticación (registro de usuario e inicio de sesión, a través de JWT)<br/>
+                        - Autorización (zona privada donde el usuario pueda ver su perfil)<br/>
+                        - Adaptado a móviles<br/>
+                    </div>
+                    <div className= "py-2" style={{fontSize: "14px"}}>
+                        <strong>Tecnología:</strong><br/>
+                        FRONTEND<br/>
+                        - ReactJS<br/>
+                        - Context API (Manejo de estados)<br/>
+                        BACKEND<br/>
+                        - Node con ExpressJS<br/>
+                        BASE DE DATOS<br/>
+                        - MongoDB<br/>
+                    </div>
+                    <strong>Tecnologías usadas:</strong>
                     <div>
-                        <Image src="/p5.jpg" alt="Skill 5" width={352} height={75}/>
+                        <Image className="py-2" src="/p5.jpg" alt="Skill 5" width={352} height={75}/>
                     </div>
                     <br/>
                     <a href="https://adorable-fudge-b56602.netlify.app/" target="_blank" rel="noopener noreferrer">
