@@ -7,7 +7,6 @@ const Proyectos = () => {
         <section id="1" style={{backgroundColor: "white"}}>
             <div className="flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2 px-20" style={{fontSize: "18px"}}>
-                    <br/>
                     <h2>Landing page de Negocio</h2>
                     <br/>
                     <Image src="/01.jpg" alt="Proyecto 1" width={640} height={570}/>
@@ -15,7 +14,6 @@ const Proyectos = () => {
                 </div>
 
                 <div className="w-full md:w-1/2 px-20">
-                    <br/>
                     Este proyecto contiene una sola página que permite:<br/><br/>
                     - Mensajes del negocio (¿qué se vende?) <br/>
                     - Breve catálogo de productos<br/>
@@ -55,6 +53,7 @@ const Proyectos = () => {
         <section id="2" style={{backgroundColor: "white"}}>
             <br/>
             <br/>
+            <br/>
             <div className="flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2 px-20" style={{fontSize: "18px"}}>
                     <br/>
@@ -64,7 +63,6 @@ const Proyectos = () => {
                     <br/>
                 </div>
                 <div className="w-full md:w-1/2 px-20">
-                    <br/>
                     <br/>
                     Este es un proyecto que permite la manipulación de datos, teniendo las siguientes características:
                     <br/>
@@ -102,6 +100,7 @@ const Proyectos = () => {
         <section id="3" style={{backgroundColor: "white"}}>
             <br/>
             <br/>
+            <br/>
             <div className="flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2 px-20" style={{fontSize: "18px"}}>
                     <br/>
@@ -111,7 +110,6 @@ const Proyectos = () => {
                     <br/>
                 </div>
                 <div className="w-full md:w-1/2 px-20">
-                    <br/>
                     <br/>
                     Un dashboard permite visualizar gráficamente distintas variables que nos interese controlar para nuestro
                         negocio o ámbito de acción.<br/>
@@ -151,6 +149,7 @@ const Proyectos = () => {
         <section id="4" style={{backgroundColor: "white"}}>
             <br/>
             <br/>
+            <br/>
             <div className="flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2 px-20" style={{fontSize: "18px"}}>
                     <br/>
@@ -160,7 +159,6 @@ const Proyectos = () => {
                     <br/>
                 </div>
                 <div className="w-full md:w-1/2 px-20">
-                    <br/>
                     <br/>
                     Sus características contemplan:
                         <br/>
@@ -201,6 +199,7 @@ const Proyectos = () => {
         <section id="5" style={{backgroundColor: "white"}}>
             <br/>
             <br/>
+            <br/>
             <div className="flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2 px-20" style={{fontSize: "18px"}}>
                     <br/>
@@ -233,7 +232,6 @@ const Proyectos = () => {
                         <Image src="/p5.jpg" alt="Skill 5" width={352} height={75}/>
                     </div>
                     <br/>
-                    <br/>
                     <a href="https://adorable-fudge-b56602.netlify.app/" target="_blank" rel="noopener noreferrer">
                         <button type="button" className="p-2  bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>
                             Ir al demo
@@ -244,7 +242,6 @@ const Proyectos = () => {
                     <a href="#1" className="p-4 bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start " style={{width: "200px"}} >
                         Subir
                     </a>                    
-                    <br/>
                     <br/>
                 </div>
             </div>

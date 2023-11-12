@@ -8,7 +8,6 @@ export default function Footer () {
             <br/>
         </footer>
         <br/>
-        <br/>
     </div>
     )
 }
