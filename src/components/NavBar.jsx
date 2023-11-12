@@ -18,13 +18,6 @@ export default function NavBar () {
                 />
 
                 <NavbarItem>
-                    <Link color="foreground" href="/">
-                        Acerca de mí
-                    </Link>
-                </NavbarItem>
-
-
-                <NavbarItem>
                     <Link color="foreground" href="/historia">
                         Historia
                     </Link>
