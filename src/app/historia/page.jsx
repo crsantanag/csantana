@@ -1,13 +1,12 @@
-
 import Image from 'next/image'
 
 const Store = () => {
     return (
-    <div className='bg-white'>
+    <div className=" bg-white">
 
         <section id="1">
-            <div className="flex flex-col md:flex-row py-5">
-                <div className="w-full md:w-1/2 sm:px-5 md:px-20  text-lg opacity-80 pb-10">
+            <div className="flex flex-col md:flex-row px-10 md:px-20 pt-5 pb-10">
+                <div className="w-full  md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
                     <strong>Por qué Full Stack Developer</strong>
                     <br/>
                     <br/>
@@ -20,10 +19,9 @@ const Store = () => {
                     entregarles herramientas digitales que les permitan el desarrollo de aplicaciones web.
                     <br/>
                     <br/>
-                    <strong><a href="#2" className="opacity-100 p-4 bg-black text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>Continuar leyendo</a></strong>
-
+                    <strong><a href="#2" className="opacity-100 p-4 bg-black text-white py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>Continuar leyendo</a></strong>
                 </div>
-                <div className="w-full md:w-1/2 px-20" >
+                <div className="w-full md:w-1/2 items-center" >
                     <Image src="/spot1.jpg" alt="Historia 1" width={640} height={570}/>
                     <br/>
                     <br/>
@@ -37,8 +35,8 @@ const Store = () => {
             <br/>
             <br/>
             <br/>
-            <div className="flex flex-col md:flex-row py-5">
-                <div className="w-full md:w-1/2 px-20 text-lg opacity-80 pb-10" >
+            <div className="flex flex-col md:flex-row px-10 md:px-20 pt-5 pb-10">
+                <div className="w-full  md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
                     <strong>2021 - 1994</strong>
                     <br />
                     <br/>
@@ -49,10 +47,9 @@ const Store = () => {
                     personal.
                     <br/>
                     <br/>
-                    <strong><a href="#3" className="p-4 bg-black text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start opacity-100" style={{width: "200px"}}>Continuar leyendo</a></strong>
+                    <strong><a href="#3" className="p-4 bg-black text-white py-2 font-bold rounded-xl tracking-wider text-start opacity-100" style={{width: "200px"}}>Continuar leyendo</a></strong>
                 </div>
-                <div className="w-full md:w-1/2 px-20" >
-                    <br/>
+                <div className="w-full md:w-1/2 items-center" >
                     <Image src="/spot2.jpg" alt="Historia 2" width={640} height={570}/>
                     <br/>
                     <br/>
@@ -66,8 +63,8 @@ const Store = () => {
             <br/>
             <br/>
             <br/>
-            <div className="flex flex-col md:flex-row py-5">
-                <div className="w-full md:w-1/2 px-20 text-lg opacity-80 pb-10" >
+            <div className="flex flex-col md:flex-row px-10 md:px-20 pt-5 pb-10">
+                <div className="w-full  md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
                     <strong>1994 - 1984</strong>
                     <br />
                     <br />
@@ -83,11 +80,10 @@ const Store = () => {
                     Applications.
                     <br/>
                     <br />
-                    <strong><a href="#1" className="p-4 bg-black text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start opacity-100" style={{width: "200px"}}>ir al comienzo</a></strong>
+                    <strong><a href="#1" className="p-4 bg-black text-white py-2 font-bold rounded-xl tracking-wider text-start opacity-100" style={{width: "200px"}}>ir al comienzo</a></strong>
                 </div>
-                <div className="w-full md:w-1/2 px-20" >
-                    <br/>
-                    <Image src="/spot3.jpg" alt="Historia 3" width={640} height={570}/>
+                <div className="w-full md:w-1/2 items-center" >
+                    <Image src="/spot3b.jpg" alt="Historia 3" width={640} height={485}/>
                     <br/>
                 </div>
             </div>
