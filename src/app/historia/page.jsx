@@ -6,7 +6,7 @@ const Store = () => {
 
         <section id="1">
             <div className="flex flex-col md:flex-row px-10 md:px-20 pt-5 pb-10">
-                <div className="w-full  md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
+                <div className="w-full md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
                     <strong>Por qué Full Stack Developer</strong>
                     <br/>
                     <br/>
@@ -36,7 +36,7 @@ const Store = () => {
             <br/>
             <br/>
             <div className="flex flex-col md:flex-row px-10 md:px-20 pt-5 pb-10">
-                <div className="w-full  md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
+                <div className="w-full md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
                     <strong>2021 - 1994</strong>
                     <br />
                     <br/>
@@ -64,7 +64,7 @@ const Store = () => {
             <br/>
             <br/>
             <div className="flex flex-col md:flex-row px-10 md:px-20 pt-5 pb-10">
-                <div className="w-full  md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
+                <div className="w-full md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
                     <strong>1994 - 1984</strong>
                     <br />
                     <br />

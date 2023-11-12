@@ -1,11 +1,13 @@
 
 import Image from 'next/image'
-import {Avatar, Navbar, NavbarContent, NavbarItem, Link, User} from "@nextui-org/react";
+import {Avatar, User} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link} from "@nextui-org/react";
 
 export default function NavBar () {
     return (
         <Navbar className="bg-slate-200 h-24">
-            <NavbarContent className="sm:flex gap-4 flex items-centerspace-x-4">
+            <NavbarContent>
+
                 <User   
                     name="Carlos Santana"
                     description={(
@@ -16,10 +18,18 @@ export default function NavBar () {
                 />
 
                 <NavbarItem>
+                    <Link color="foreground" href="/">
+                        Acerca de mí
+                    </Link>
+                </NavbarItem>
+
+
+                <NavbarItem>
                     <Link color="foreground" href="/historia">
                         Historia
                     </Link>
                 </NavbarItem>
+
                 <NavbarItem>
                     <Link color="foreground" href="/proyectos">
                         Proyectos

@@ -6,11 +6,11 @@ const Proyectos = () => {
         <>
         <section id="1">
             <div className="flex flex-col md:flex-row py-4">
-                <div className="w-full md:w-1/2 px-20" style={{fontSize: "18px"}}>
+                <div className="w-full md:w-1/2 px-10 md:px-20" style={{fontSize: "18px"}}>
                     <strong>Landing page de Negocio</strong>
                     <Image className="py-2" src="/01.jpg" alt="Proyecto 1" width={640} height={570}/>
                 </div>
-                <div className="w-full md:w-1/2 px-20">
+                <div className="w-full md:w-1/2 px-10 md:px-20">
                     Este proyecto contiene una sola página que permite:<br/><br/>
                     - Mensajes del negocio (¿qué se vende?) <br/>
                     - Breve catálogo de productos<br/>
@@ -52,12 +52,12 @@ const Proyectos = () => {
             <br/>
             <br/>
             <div className="flex flex-col md:flex-row py-4">
-                <div className="w-full md:w-1/2 px-20" style={{fontSize: "18px"}}>
+                <div className="w-full md:w-1/2 px-10 md:px-20" style={{fontSize: "18px"}}>
                     <br/>
                     <strong>Aplicación CRUD</strong>
                     <Image className="py-2" src="/02.jpg" alt="Proyecto 2" width={640} height={570}/>
                 </div>
-                <div className="w-full md:w-1/2 px-20">
+                <div className="w-full md:w-1/2 px-10 md:px-20">
                     <br/>
                     Este es un proyecto que permite la manipulación de datos, teniendo las siguientes características:
                     <br/>
@@ -96,13 +96,13 @@ const Proyectos = () => {
             <br/>
             <br/>
             <div className="flex flex-col md:flex-row py-4">
-                <div className="w-full md:w-1/2 px-20" style={{fontSize: "18px"}}>
+                <div className="w-full md:w-1/2 px-10 md:px-20" style={{fontSize: "18px"}}>
                     <br/>
                     <strong>Tablero de Datos (Dashboard)</strong>
                     <Image className="py-2" src="/03.jpg" alt="Proyecto 3" width={640} height={570}/>
                     <br/>
                 </div>
-                <div className="w-full md:w-1/2 px-20">
+                <div className="w-full md:w-1/2 px-10 md:px-20">
                     <br/>
                     Un dashboard permite visualizar gráficamente distintas variables que nos interese controlar para nuestro
                         negocio o ámbito de acción.<br/>
@@ -144,12 +144,12 @@ const Proyectos = () => {
             <br/>
             <br/>
             <div className="flex flex-col md:flex-row py-4">
-                <div className="w-full md:w-1/2 px-20" style={{fontSize: "18px"}}>
+                <div className="w-full md:w-1/2 px-10 md:px-20" style={{fontSize: "18px"}}>
                     <br/>
                     <strong>Aplicación Restaurante</strong>
                     <Image className="py-2" src="/04.jpg" alt="Proyecto 4" width={640} height={593}/>
                 </div>
-                <div className="w-full md:w-1/2 px-20">
+                <div className="w-full md:w-1/2 px-10 md:px-20">
                     <br/>
                     Sus características contemplan:
                     <div className="pt-3">
@@ -192,12 +192,12 @@ const Proyectos = () => {
             <br/>
             <br/>
             <div className="flex flex-col md:flex-row py-4">
-                <div className="w-full md:w-1/2 px-20" style={{fontSize: "18px"}}>
+                <div className="w-full md:w-1/2 px-10 md:px-20" style={{fontSize: "18px"}}>
                     <br/>
                     <strong>Aplicación e-Commerce</strong>
                     <Image className="py-2" src="/05.jpg" alt="Proyecto 5" width={640} height={593}/>
                 </div>
-                <div className="w-full md:w-1/2 px-20">
+                <div className="w-full md:w-1/2 px-10 md:px-20">
                     <br/>
                     Sus características contemplan:<br/>
                     <div className="pt-3">
