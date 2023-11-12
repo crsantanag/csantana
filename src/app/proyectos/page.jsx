@@ -34,9 +34,11 @@ const Proyectos = () => {
                     </div>
                     <br/>
                     <br/> 
-                    <button type="button" className="p-2  bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "195px"}}>
-                        Ir al demo
-                    </button> 
+                    <a href="https://crsantanag.github.io/Landing-de-Venta/" target="_blank" rel="noopener noreferrer">
+                        <button type="button" className="p-2 bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "195px"}}>
+                            Ir al demo
+                        </button>
+                    </a>
                     <br/> 
                     <br/>
                     <a href="#2" className="p-4 bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start " style={{width: "200px"}} >
@@ -68,6 +70,7 @@ const Proyectos = () => {
                     <br/>
                     <br/>
                     - Usa solo una página (Single Page Application)<br/>
+                    - Usa Local Storage para almacenar los registros
                     - Tiene una sección para crear elementos (productos, tareas, usuarios, etc.)<br/>
                     - Tiene una sección para borrar elementos<br/>
                     - Tiene una sección para modificar elementos<br/>
@@ -80,10 +83,11 @@ const Proyectos = () => {
                     <br/>
                     <br/>
                     <br/>
-
-                    <button type="button" className="p-2  bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>
-                        Ir al demo
-                    </button> 
+                    <a href="https://crsantanag.github.io/CRUD/" target="_blank" rel="noopener noreferrer">
+                        <button type="button" className="p-2  bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>
+                            Ir al demo
+                        </button>
+                    </a>
                     <br/> 
                     <br/>
                     <a href="#3" className="p-4 bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start " style={{width: "200px"}} >
@@ -117,7 +121,7 @@ const Proyectos = () => {
                         <br/>
                         <br/>
                         Este proyecto contempla:<br/>
-                        - Usa un ambiente de desarrollo con React.js<br/>
+                        - Usa un ambiente de desarrollo con Node.js<br/>
                         - Utiliza Chart.js para el desarrollo de gráficas.<br/>
                         - Realiza una conexión a una API externa para extraer datos.<br/>
                     <br/>
@@ -128,9 +132,11 @@ const Proyectos = () => {
                     <br/>
                     <br/>
                     <br/>
-                    <button type="button" className="p-2  bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>
-                        Ir al demo
-                    </button> 
+                    <a href="https://crsantanag.github.io/Dashboard/" target="_blank" rel="noopener noreferrer">
+                        <button type="button" className="p-2  bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>
+                            Ir al demo
+                        </button>
+                    </a>
                     <br/> 
                     <br/>
                     <a href="#4" className="p-4 bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start " style={{width: "200px"}} >
@@ -176,9 +182,11 @@ const Proyectos = () => {
                     <br/>
                     <br/>
                     <br/>
-                    <button type="button" className="p-2 bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>
-                        Ir al demo
-                    </button> 
+                    <a href="https://fascinating-lokum-0495a9.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <button type="button" className="p-2 bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>
+                            Ir al demo
+                        </button>
+                    </a>
                     <br/> 
                     <br/>
                     <a href="#5" className="p-4 bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start " style={{width: "200px"}} >
@@ -226,9 +234,11 @@ const Proyectos = () => {
                     </div>
                     <br/>
                     <br/>
-                    <button type="button" className="p-2  bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>
-                        Ir al demo
-                    </button> 
+                    <a href="https://adorable-fudge-b56602.netlify.app/" target="_blank" rel="noopener noreferrer">
+                        <button type="button" className="p-2  bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>
+                            Ir al demo
+                        </button>
+                    </a>
                     <br/> 
                     <br/>
                     <a href="#1" className="p-4 bg-gray-800 text-white px-4 py-2 font-bold rounded-xl tracking-wider text-start " style={{width: "200px"}} >

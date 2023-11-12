@@ -4,7 +4,7 @@ import {Avatar, Navbar, NavbarContent, NavbarItem, Link, User} from "@nextui-org
 
 export default function NavBar () {
     return (
-        <Navbar className="bg-slate-200">
+        <Navbar className="bg-slate-200 h-16">
             <NavbarContent className="sm:flex gap-4 flex items-centerspace-x-4" >
                 <User   
                     name="Carlos Santana"
