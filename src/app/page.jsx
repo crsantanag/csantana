@@ -9,7 +9,7 @@ const HomePage = () => {
                 <div className="w-full md:w-1/2 px-5">
                     <Image src="/homepage.jpg" alt="Portada" width={640} height={536}/>
                 </div>
-                <div className="w-full md:w-1/2 px-5" >
+                <div className="w-full md:w-1/2 px-5 pt-5 md:pt-0" >
                     <h1>Carlos Santana</h1>
 
                     <div className="col text-sm opacity-50" style={{fontSize: "20px"}}>
