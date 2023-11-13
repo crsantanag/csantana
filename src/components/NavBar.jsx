@@ -24,16 +24,23 @@ export default function NavBar () {
 
         <Navbar disableAnimation isBordered className="bg-slate-200">
 
-
-
             <NavbarContent className="sm:hidden" justify="start">
                 <NavbarMenuToggle />
             </NavbarContent>
 
+            <div className="hidden md:block">
+                <User 
+                    className='items-center' 
+                    name="Carlos Santana G"
+                    description={(
+                    <Link href="/" size='sm' color="white">
+                    Full Stack Developer
+                </Link> )}
+                avatarProps={{ src: "/csantana.jpg" }}
+            />
+            </div>
+
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
-                <NavbarBrand>
-                    <p className="font-bold text-inherit">CS</p>
-                </NavbarBrand>
                 <NavbarItem>
                     <Link href="/" color="foreground" >
                         Quién soy
@@ -64,15 +71,6 @@ export default function NavBar () {
                     </NavbarMenuItem>
                 ))}
             </NavbarMenu>
-
-            <User  className='items-center' 
-                name="Carlos Santana"
-                description={(
-                <Link href="/" size='sm' color="white">
-                    Full Stack Developer
-                </Link> )}
-                avatarProps={{ src: "/csantana.jpg" }}
-            />
 
             <div className="flex items-end bg-slate-200 sm:flex gap-2 space-x-2">
                 <a href="https://www.linkedin.com/in/carlos-santana-11019014/" target="_blank" rel="noopener noreferrer"> <Image src="/logo-in.jpg"  width={35} height={35} alt="Logo de Linked In"/> </a>
