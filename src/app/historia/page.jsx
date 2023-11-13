@@ -50,9 +50,9 @@ const Store = () => {
         </section>
 
         <section id="3">
-            <div className="min-h-screen flex flex-col md:flex-row px-10 md:px-20 pt-20">
+            <div className="flex flex-col md:flex-row px-10 md:px-20 pt-20">
                 <div className="w-full md:w-1/2 items-center" >
-                    <Image src="/spot3b.jpg" alt="Historia 3" width={640} height={485}/>
+                    <Image src="/spot3.jpg" alt="Historia 3" width={640} height={485}/>
                 </div>
                 <div className="w-full md:w-1/2 text-lg md:pr-10 opacity-80 pb-10 pt-10">
                     <strong>1994 - 1984</strong>

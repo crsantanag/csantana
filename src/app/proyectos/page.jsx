@@ -25,7 +25,7 @@ const Proyectos = () => {
                     <br/>
                     <strong>Tecnologías usadas:</strong> <br/>
                     <div>
-                        <Image className="py-2" src="/p1.jpg" alt="Skill 1" width={140} height={75}/>
+                        <Image className="py-2" src="/p1.jpg" alt="Skill 1" width={209} height={75}/>
                     </div>
                     <br/>
                     <br/> 
@@ -50,7 +50,6 @@ const Proyectos = () => {
         <section id="2">
             <br/>
             <br/>
-            <br/>
             <div className="flex flex-col md:flex-row py-4">
                 <div className="w-full md:w-1/2 px-10 md:px-20" style={{fontSize: "18px"}}>
                     <br/>
@@ -71,7 +70,7 @@ const Proyectos = () => {
                     <br/>
                     <strong>Tecnologías usadas:</strong> <br/>
                     <div>
-                        <Image className="py-5" src="/p2.jpg" alt="Skill 2" width={215} height={75}/>
+                        <Image className="py-5" src="/p2.jpg" alt="Skill 2" width={278} height={75}/>
                     </div>
                     <br/>
                     <br/> 
@@ -118,7 +117,7 @@ const Proyectos = () => {
                     <br/>
                     <strong>Tecnologías usadas:</strong>
                     <div>
-                        <Image className="py-2" src="/p3.jpg" alt="Skill 3" width={215} height={75}/>
+                        <Image className="py-2" src="/p3.jpg" alt="Skill 3" width={278} height={75}/>
                     </div>
                     <br/>
                     <br/>
@@ -166,7 +165,7 @@ const Proyectos = () => {
                     <br/>
                     <strong>Tecnologías usadas:</strong>
                     <div>
-                        <Image className="py-2" src="/p4.jpg" alt="Skill 4" width={215} height={75}/>
+                        <Image className="py-2" src="/p4.jpg" alt="Skill 4" width={278} height={75}/>
                     </div>
                     <br/>
                     <br/>
@@ -220,7 +219,7 @@ const Proyectos = () => {
                     </div>
                     <strong>Tecnologías usadas:</strong>
                     <div>
-                        <Image className="py-2" src="/p5.jpg" alt="Skill 5" width={352} height={75}/>
+                        <Image className="py-2" src="/p5.jpg" alt="Skill 5" width={466} height={75}/>
                     </div>
                     <br/>
                     <a href="https://adorable-fudge-b56602.netlify.app/" target="_blank" rel="noopener noreferrer">
