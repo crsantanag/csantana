@@ -7,7 +7,7 @@ const HomePage = () => {
         <>
         <div className="py-5 bg-white">
             <div className="flex flex-col md:flex-row">
-                <div className="w-full md:w-1/2 px-5">
+                <div className="w-full pl-5 md:w-1/2 md:pl-12 ">
                     <Image src="/homepage.jpg" alt="Portada" width={640} height={536}/>
                 </div>
                 <div className="w-full md:w-1/2 px-5 pt-5 md:pt-0" >
