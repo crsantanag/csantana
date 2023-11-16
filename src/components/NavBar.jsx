@@ -82,18 +82,22 @@ export default function NavBar () {
                 <a href="https://www.linkedin.com/in/carlos-santana-11019014/" target="_blank" rel="noopener noreferrer"> <Image src="/logo-in.jpg"  width={35} height={35} alt="Logo de Linked In"/> </a>
                 <a href="https://github.com/crsantanag" target="_blank" rel="noopener noreferrer"> <Image src="/logo-github.jpg"  width={35} height={35} alt="Logo de GitHub"/> </a>
                 <a href="mailto:carlos.santana.gacitua@gmail.com"> <Image src="/logo-email.jpg"  width={35} height={35} alt="Logo de eMail"/> </a>
+
+{/*
                 <button onClick={toggleSound}>
-                     {isSoundOn ?  (
-                        <Image src="/MusicOn.jpg" alt="Encender Sonido" width={35} height={35}/>
+                    {isSoundOn ?  (
+                        <Image src="/music.jpg" alt="Encender Sonido" width={35} height={35}/>
                         )  : (
-                        <Image src="/MusicOff.jpg" alt="Apagar Sonido" width={35} height={35}/>
-                        )}
+                        <Image src="/music.jpg" alt="Apagar Sonido" width={35} height={35}/>
+                    )}
                 </button> 
                 {isSoundOn && (
                     <audio autoPlay loop>
                         <source src="/HonorHim.wav" type="audio/wav" />
                     </audio>
                 )}
+*/}
+
             </div>
 
         </Navbar>
