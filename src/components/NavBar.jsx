@@ -1,7 +1,6 @@
 "use client"
 import Image from 'next/image'
-import { motion } from "framer-motion"
-import {Avatar, User} from "@nextui-org/react";
+import {User} from "@nextui-org/react";
 import {Navbar, NavbarMenu, NavbarMenuToggle, NavbarMenuItem, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
 import { useState } from 'react';
 
