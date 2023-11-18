@@ -10,8 +10,6 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Portafolio Carlos Santana',
   description: 'Next app',
-  keywords: ['portafolio, udd, bootcamp, nextJS, Carlos Santana'],
-  authors:  [{name: 'Carlos Santana'}, {url: 'https://csantana.vercel.app/'}]
 }
 
 export default function RootLayout({ children }) {
