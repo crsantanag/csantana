@@ -17,7 +17,8 @@ export default function NavBar () {
         "Quién soy",
         "Mi historia",
         "Mis proyectos",
-        "Contáctame"
+        "Contáctame",
+        "Mi CV"
     ];
 
     const menuPages = [
@@ -25,6 +26,7 @@ export default function NavBar () {
         "/historia",
         "/proyectos",
         "/contacto",
+        "/CarlosSantana.pdf"
     ];
 
     return (
@@ -80,6 +82,11 @@ export default function NavBar () {
                 <NavbarItem>
                     <Link href="/contacto" color="foreground" >
                         Contáctame
+                    </Link>
+                </NavbarItem>
+                <NavbarItem>
+                    <Link href="/CarlosSantana.pdf" color="foreground" >
+                        Mi CV
                     </Link>
                 </NavbarItem>
             </NavbarContent>

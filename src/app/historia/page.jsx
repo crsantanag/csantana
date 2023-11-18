@@ -6,11 +6,11 @@ const Store = () => {
 
         <section id="1">
             <div className="min-h-screen flex flex-col md:flex-row px-10 md:px-20 pt-4">
-                <div className="w-full md:w-1/2 items-center" >
+                <div className="w-full pr-5 md:w-1/2 items-center" >
                     <Image src="/spot1.jpg" alt="Historia 1" width={640} height={570}/>
                     <br/>
                 </div>
-                <div className="w-full md:w-1/2 text-lg md:pr-10 opacity-80 pb-10 pt-5">
+                <div className="w-full md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
                     <strong>Por qué Full Stack Developer</strong>
                     <br/>
                     <br/>
@@ -30,10 +30,10 @@ const Store = () => {
 
         <section id="2">
             <div className="min-h-screen flex flex-col md:flex-row px-10 md:px-20 pt-20">
-                <div className="w-full md:w-1/2 items-center" >
+                <div className="w-full pr-5 md:w-1/2 items-center" >
                     <Image src="/spot2.jpg" alt="Historia 2" width={640} height={570}/>
                 </div>
-                <div className="w-full md:w-1/2 text-lg md:pr-10 opacity-80 pb-10 pt-10">
+                <div className="w-full md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
                     <strong>2021 - 1994</strong>
                     <br />
                     <br/>
@@ -51,10 +51,10 @@ const Store = () => {
 
         <section id="3">
             <div className="flex flex-col md:flex-row px-10 md:px-20 pt-20">
-                <div className="w-full md:w-1/2 items-center" >
+                <div className="w-full pr-5 md:w-1/2 items-center" >
                     <Image src="/spot3.jpg" alt="Historia 3" width={640} height={485}/>
                 </div>
-                <div className="w-full md:w-1/2 text-lg md:pr-10 opacity-80 pb-10 pt-10">
+                <div className="w-full md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
                     <strong>1994 - 1984</strong>
                     <br />
                     <br />
