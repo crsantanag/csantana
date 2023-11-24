@@ -1,5 +1,7 @@
-import {Card, CardHeader, CardBody, CardFooter, Image, Button} from "@nextui-org/react"
+import { Card, CardHeader, CardBody, CardFooter, Image, Button }  from "@nextui-org/react"
 import './assets/styles.css'
+import 'animate.css'
+
 
 const HomePage = () => {
 
@@ -7,20 +9,22 @@ const HomePage = () => {
         <>
         <div className="py-5 bg-white">
             <div className="flex flex-col md:flex-row">
-                <div className="w-full pl-5 md:w-1/2 md:pl-12 ">
+                <div className="w-full px-5 md:w-1/2 md:pl-12 ">
                     <Image src="/homepage.jpg" alt="Portada" width={640} height={536}/>
                 </div>
-                <div className="w-full md:w-1/2 px-5 pt-5 md:pt-0" >
-                    <h1>Carlos Santana</h1>
+                <div className="w-full md:w-1/2 px-5 pt-5 md:pt-0 " >
+                    <div className="animate__animated animate__bounceInRight text-2xl font-bold">
+                        <h1>Carlos Santana</h1>
+                    </div>
 
-                    <div className="col text-sm opacity-50" style={{fontSize: "20px"}}>
+                    <div className="col text-xl opacity-50 tracking-wide">
                         <br/>
                         Profesional con más de 30 años de experiencia en la dirección y gestión estratégica de pequeñas y
                         medianas empresas (entre 20 y 150 personas).
                         <br/>
                     </div>
 
-                    <div className="col opacity-50" style={{fontSize: "14px"}}>
+                    <div className="col opacity-50 text-sm" >
                         <br/>
                         <strong>Formación: </strong> <br/>
                         - Ingeniero en Computación e informática (Universidad de Concepción - 1984)<br/>

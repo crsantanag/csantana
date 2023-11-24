@@ -1,7 +1,8 @@
 'use client'
 import {CircularProgress} from "@nextui-org/react";
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
-import { useState } from 'react';
+import { useState } from 'react'
+import 'animate.css'
 
 export default function Contacto () {
 
@@ -53,10 +54,13 @@ export default function Contacto () {
     }
 
     return (
-        <div className="bg-white flex min-h-screen flex-col items-center" >
+        <div className="bg-white flex flex-col items-center">
 
             <form onSubmit={handleSubmit} className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
-                <div className="mb-4 flex flex-col w-600 text-center"  >
+                <div className="mb-4 flex flex-col w-600 text-center ">
+                    <div className="animate__animated animate__bounceInRight text-xl font-bold">
+                        Contacto
+                    </div>
                     <br/>
                     <h3>¿ALGUNA PREGUNTA O COMENTARIO?</h3>
                     No dudes en contactarme. <br/>
@@ -77,31 +81,35 @@ export default function Contacto () {
                 <button type="submit" className="p-2 bg-gray-800 text-white px-4 py-2 font-bold rounded-lg tracking-wider text-start" >
                     Enviar mensaje
                 </button>
+                <br/>
+                <br/>
             </form>
 
             <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
-                <ModalContent>
+                <ModalContent className="text-start items-start">
                     {(onClose) => (
                         <>
-                            <ModalHeader className="flex flex-col gap-1">Enviando mensaje a Carlos Santana</ModalHeader>
-                                <ModalBody>
-                                { espera     &&  <CircularProgress /> }
-                                </ModalBody>
-                                { exito     &&  
-                                <ModalFooter className="text-start">
-                                    <p>Mensaje enviado exitosamente</p>
-                                    <Button onPress={onClose}>
-                                        Cerrar
-                                    </Button>
-                                </ModalFooter> }
-                                { error    &&  
-                                <ModalFooter className="text-start">
-                                    <p style={{}}>No se pudo enviar el mensaje <br/>
-                                    inténtalo nuevamente</p>
-                                    <Button color="primary" onPress={onClose}>
-                                        Cerrar
-                                    </Button>
-                                </ModalFooter> }
+                            <ModalHeader className="flex flex-col gap-1">
+                                Enviando mensaje a Carlos Santana
+                            </ModalHeader>
+                            <ModalBody>
+                            { espera     &&  <CircularProgress /> }
+                            </ModalBody>
+                            { exito     &&  
+                            <ModalFooter className="text-start items-start leading-6">
+                                <p className="pt-1">Mensaje enviado exitosamente</p>
+                                <Button className="leading-7"onPress={onClose}>
+                                    Cerrar
+                                </Button>
+                            </ModalFooter> }
+                            { error    &&  
+                            <ModalFooter className="text-start items-start">
+                                <p>No se pudo enviar el mensaje <br/>
+                                inténtalo nuevamente</p>
+                                <Button color="primary" onPress={onClose}>
+                                    Cerrar
+                                </Button>
+                            </ModalFooter> }
                         </>
                     )}
                 </ModalContent>

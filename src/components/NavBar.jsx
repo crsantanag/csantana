@@ -10,7 +10,7 @@ export default function NavBar () {
     const [isSoundOn, setIsSoundOn] = useState(false);
 
     const toggleSound = () => {
-      setIsSoundOn(!isSoundOn);
+        setIsSoundOn(!isSoundOn);
     };
 
     const menuItems = [
@@ -44,7 +44,7 @@ export default function NavBar () {
             <NavbarMenu>
                 {menuItems.map((item, index) => (
                     <NavbarMenuItem key={`${item}-${index}`}>
-                        <Link href={`${menuPages[index]}`} className="w-full" size="lg">
+                        <Link href={`${menuPages[index]}`} className="w-full" size="xl">
                         {item}
                         </Link>
                     </NavbarMenuItem>
@@ -94,6 +94,7 @@ export default function NavBar () {
             <div className="flex items-end bg-slate-200 sm:flex gap-2 space-x-2">
                 <a href="https://www.linkedin.com/in/carlos-santana-11019014/" target="_blank" rel="noopener noreferrer"> <Image src="/logo-in.jpg"  width={35} height={35} alt="Logo de Linked In"/> </a>
                 <a href="https://github.com/crsantanag" target="_blank" rel="noopener noreferrer"> <Image src="/logo-github.jpg"  width={35} height={35} alt="Logo de GitHub"/> </a>
+
 {/*
                 <button onClick={toggleSound}>
                     {isSoundOn ?  (
@@ -110,7 +111,6 @@ export default function NavBar () {
 */}
 
             </div>
-
         </Navbar>
 
 

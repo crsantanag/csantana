@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import 'animate.css'
 
 const Store = () => {
     return (
@@ -11,8 +12,9 @@ const Store = () => {
                     <br/>
                 </div>
                 <div className="w-full md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
-                    <strong>Por qué Full Stack Developer</strong>
-                    <br/>
+                    <div className="animate__animated animate__bounceInRight text-xl font-bold">
+                        Por qué Full Stack Developer
+                    </div>
                     <br/>
                     Durante el año 2023 comencé a actualizar mis conocimientos en el área informática, decidiéndome por
                     el desarrollo de aplicaciones web como una forma de aportar al desarrollo de las empresas e instituciones
@@ -32,10 +34,12 @@ const Store = () => {
             <div className="min-h-screen flex flex-col md:flex-row px-10 md:px-20 pt-20">
                 <div className="w-full pr-5 md:w-1/2 items-center" >
                     <Image src="/spot2.jpg" alt="Historia 2" width={640} height={570}/>
+                    <br/>
                 </div>
                 <div className="w-full md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
-                    <strong>2021 - 1994</strong>
-                    <br />
+                    <div className="animate__animated animate__backInRight font-bold">
+                        2021 - 1994
+                    </div>
                     <br/>
                     Durante este periodo me dediqué a la gestión de pequeñas y medianas empresas, siendo gerente de operaciones,
                     de desarrollo y gerente general de diferentes empresas de servicios en las áreas de transporte, obras civiles,
@@ -53,10 +57,12 @@ const Store = () => {
             <div className="flex flex-col md:flex-row px-10 md:px-20 pt-20">
                 <div className="w-full pr-5 md:w-1/2 items-center" >
                     <Image src="/spot3.jpg" alt="Historia 3" width={640} height={485}/>
+                    <br/>
                 </div>
                 <div className="w-full md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
-                    <strong>1994 - 1984</strong>
-                    <br />
+                    <div className="animate__animated animate__backInRight font-bold">
+                        1994 - 1984
+                    </div>
                     <br />
                     Durante esos años fui Ingeniero de Sistemas (4 años) y posteriormente Jefe de Procesamiento de Datos en
                     la Universidad de Concepción (6 años). A comienzos de los años noventa trabajé en la incorporación de esta
