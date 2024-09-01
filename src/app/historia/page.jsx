@@ -45,8 +45,7 @@ const Store = () => {
                                 {texto1.map((item, index) => (
                                 <li key={index}>
                                     <div className="flex flex-row">
-                                        <div className="before:content-['-'] before:mr-1"></div>
-                                        <div className="mr-3">
+                                        <div>
                                             {item}
                                         </div>
                                     </div>
@@ -54,7 +53,6 @@ const Store = () => {
                                 ))}
                             </ul>
                         </div>
-                        <br/><br/>
                         Adicionalmente, comienzo con el desarrollo de una escuela de programación para jóvenes, de manera de
                         entregarles herramientas digitales que les permitan el desarrollo de aplicaciones web.
                     </div>
