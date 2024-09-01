@@ -6,22 +6,18 @@ import '../assets/styles.css'
 const Store = () => {
 
     const texto1 = [
-        "Durante el año 2023 comencé a actualizar mis conocimientos en el área informática, decidiéndome por el desarrollo de aplicaciones como una forma de aportar al desarrollo de las empresas e instituciones con una mirada hacia los clientes, de lo que desean y -a mi parecer- de lo que necesitan."
+        "Durante el año 2023 comencé a actualizar mis conocimientos en el área informática, decidiéndome por el desarrollo de aplicaciones como una forma de aportar al desarrollo de las empresas e instituciones con una mirada hacia los clientes, de lo que desean y -a mi parecer- de lo que necesitan.",
+        "Adicionalmente, comienzo con el desarrollo de una escuela de programación para jóvenes, de manera de entregarles herramientas digitales que les permitan el desarrollo de aplicaciones web."
         ];
     
     const texto2 = [
-        "Usa solo una página (Single Page Application)",
-        "Usa Local Storage para almacenar los registros",
-        "Tiene una sección para crear elementos",
-        "Tiene una sección para ver todos los elementos creados",
-        "Tiene una sección para modificar elementos",
-        "Tiene una sección para borrar elementos"
+        "Durante este periodo me dediqué a la gestión de pequeñas y medianas empresas, siendo gerente de operaciones de desarrollo y gerente general de diferentes empresas de servicios en las áreas de transporte, obras civiles, minería (6 años), logística (2 años), tecnologías de la información (8 años) y deportes y recreación (11 años).",
+        "En el año 2021 renuncié voluntariamente a mi último trabajo para dedicarme a diversos proyectos de crecimiento personal."
         ];
     
     const texto3 = [
-        "Usa un ambiente de desarrollo con Node.js",
-        "Utiliza Chart.js para el desarrollo de gráficas",
-        "Realiza una conexión a una API externa para extraer datos"
+        "Durante esos años fui Ingeniero de Sistemas (4 años) y posteriormente Jefe de Procesamiento de Datos en la Universidad de Concepción (6 años). A comienzos de los años noventa trabajé en la incorporación de esta universidad como nodo secundario de la Internet en Chile. Asistí a diversos congresos en USA de la Internet Society, donde -entre otros- se mostró el primer prototipo del NCSA Mosaic.",
+        "** El navegador Mosaic o NCSA Mosaic fue el primer navegador web gráfico disponible para visualizar páginas web en sistemas operativos como Mac, Windows u otros. Este navegador web fue creado en enero de 1993, en el National Center for Supercomputing Applications.",
         ];
 
     return (
@@ -44,19 +40,14 @@ const Store = () => {
                             <ul className="list-none pl-2">
                                 {texto1.map((item, index) => (
                                 <li key={index}>
-                                    <div className="flex flex-row">
-                                        <div>
-                                            {item}
-                                        </div>
+                                    <div>
+                                        {item}
                                     </div>
                                 </li>
                                 ))}
                             </ul>
                         </div>
-                        Adicionalmente, comienzo con el desarrollo de una escuela de programación para jóvenes, de manera de
-                        entregarles herramientas digitales que les permitan el desarrollo de aplicaciones web.
                     </div>
-
                     <div className="hidden md:mt-auto md:flex md:flex-col">
                         <div className="flex flex-row justify-between">
                             <a href="#3" >
@@ -88,13 +79,18 @@ const Store = () => {
                     </div>
                     <br/>
                     <div className="font-thin">
-                    Durante este periodo me dediqué a la gestión de pequeñas y medianas empresas, siendo gerente de operaciones,
-                    de desarrollo y gerente general de diferentes empresas de servicios en las áreas de transporte, obras civiles,
-                    minería (6 años), logística (2 años), tecnologías de la información (8 años) y deportes y recreación (11 años).
-                    En el año 2021 renuncié voluntariamente a mi último trabajo para dedicarme a diversos proyectos de crecimiento
-                    personal.
+                        <div className="text-justify mb-4">
+                            <ul className="list-none pl-2">
+                                {texto2.map((item, index) => (
+                                <li key={index}>
+                                    <div>
+                                        {item}
+                                    </div>
+                                </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
-
                     <div className="hidden md:mt-auto md:flex md:flex-col">
                             <div className="flex flex-row justify-between">
                                 <a href="#1" >
@@ -127,18 +123,19 @@ const Store = () => {
                     </div>
                     <br/>
                     <div className="font-thin">
-                    Durante esos años fui Ingeniero de Sistemas (4 años) y posteriormente Jefe de Procesamiento de Datos en
-                    la Universidad de Concepción (6 años). A comienzos de los años noventa trabajé en la incorporación de esta
-                    universidad como nodo secundario de la Internet en Chile. Asistí a diversos congresos en USA de la Internet
-                    Society, donde -entre otros- se mostró el primer prototipo del NCSA Mosaic.
-                    <br/>
-                    <br/>
-                    ** El navegador Mosaic o NCSA Mosaic
-                    fue el primer navegador web gráfico disponible para visualizar páginas web en sistemas operativos como Mac,
-                    Windows u otros. Este navegador web fue creado en enero de 1993, en el National Center for Supercomputing
-                    Applications.
+                        <div className="text-justify mb-4">
+                            <ul className="list-none pl-2">
+                                {texto3.map((item, index) => (
+                                <li key={index}>
+                                    <div>
+                                        {item}
+                                    </div>
+                                    <br/>
+                                </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
-
                     <div className="hidden md:mt-auto md:flex md:flex-col">
                             <div className="flex flex-row justify-between">
                                 <a href="#2" >
