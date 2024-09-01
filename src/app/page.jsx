@@ -1,6 +1,8 @@
 'use client'
 import { Image }  from "@nextui-org/react"
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import CredlyBadge from './credlyBadge';
 import './assets/styles.css'
 
@@ -28,8 +30,15 @@ export default function Homepage() {
 
 
                         <div className="mt-5 lg:mt-auto flex flex-col sm:flex-row pantalla1">
-                            <div className="w-full md:block md:w-1/2 text-lg font-bold">
-                                Formación académica: <br/>
+                            <div className="w-full md:w-1/2 text-lg font-bold">
+                                <div className="flex flex-row">
+                                    <div className="mt-3 p-0">
+                                        Formación académica
+                                    </div>
+                                    <div className="ml-3 p-0">
+                                        <FontAwesomeIcon className="w-10 h-10 text-accent" icon={ faGraduationCap }/>
+                                    </div>
+                                </div>
                                 <div className="text-base font-thin">
                                 - Ingeniero en Computación e informática (Universidad de Concepción - 1984)<br/>
                                 - Ingeniero Civil Industrial (Universidad de Concepción - 1994)<br/>
@@ -46,8 +55,15 @@ export default function Homepage() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row pantalla2 mx-2 mt-5">
-                    <div className="w-full md:block md:w-1/2 text-lg">
-                        <strong>Formación académica: </strong>
+                    <div className="w-full md:block md:w-1/2 text-lg font-bold">
+                        <div className="flex flex-row">
+                            <div className="mt-3 p-0">
+                                Formación académica
+                            </div>
+                            <div className="ml-3 p-0">
+                                <FontAwesomeIcon className="w-10 h-10 text-accent" icon={ faGraduationCap }/>
+                            </div>
+                        </div>
                         <div className="text-base font-thin">
                         - Ingeniero en Computación e informática (Universidad de Concepción - 1984)<br/>
                         - Ingeniero Civil Industrial (Universidad de Concepción - 1994)<br/>
