@@ -1,14 +1,42 @@
 * {
     margin: 0;
     padding: 0;
-    padding-left: 0;
-    padding-right: 0;
-    box-sizing: border-box;
-    /* border: solid red */
+    /*border: 1px solid red*/
 }
 
-body {
-    font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
-    background-color: white;
+.navbar-menu-toggle {
+    /* Custom styles for the hamburger icon on mobile */
+    font-size: 48px; /* Adjust size as needed */
+    color: #00FF99;
+    background-color: red; /* Adjust color as needed */
 }
 
+.centrar {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.centrar-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+    .pantalla2 {
+        display: none
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023.97px) {  
+    .pantalla1 {
+        display: none
+    }
+}
+
+@media (max-width: 767.97px) {
+    .pantalla2 {
+        display: none
+    }
+}

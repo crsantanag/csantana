@@ -1,87 +1,132 @@
-import Image from 'next/image'
-import 'animate.css'
+import { Image }  from "@nextui-org/react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import '../assets/styles.css'
 
 const Store = () => {
     return (
-    <div className=" bg-white">
-
-        <section id="1">
-            <div className="min-h-screen flex flex-col md:flex-row px-10 md:px-20 pt-4">
-                <div className="w-full pr-5 md:w-1/2 items-center" >
-                    <Image src="/spot1.jpg" alt="Historia 1" width={640} height={570}/>
-                    <br/>
+    <>
+        <section id="1" className="pt-[96px]">
+            <div className="flex flex-col md:flex-row py-4">
+                <div className="flex pb-4 text-xl justify-center font-bold md:hidden">
+                    Por qué Full Stack Developer
                 </div>
-                <div className="w-full md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
-                    <div className="animate__animated animate__bounceInRight text-xl font-bold">
+                <div className="w-full md:w-1/2 px-2 md:px-16 flex justify-center">
+                    <Image src="/spot1.jpg" alt="Historia 1"/>
+                </div>
+                <div className="w-full md:w-1/2 px-2 md:px-16 text-medium leading-leading-[0.5rem] flex flex-col justify-between">
+                    <div className="hidden md:flex md:mt-0 md:text-xl md:font-bold">
                         Por qué Full Stack Developer
                     </div>
                     <br/>
-                    Durante el año 2023 comencé a actualizar mis conocimientos en el área informática, decidiéndome por
-                    el desarrollo de aplicaciones web como una forma de aportar al desarrollo de las empresas e instituciones
-                    con una mirada hacia los clientes, de lo que desean y -a mi parecer- de lo que necesitan.
-                    <br />
-                    <br />
-                    Adicionalmente, comienzo con el desarrollo de una escuela de programación para jóvenes, de manera de
-                    entregarles herramientas digitales que les permitan el desarrollo de aplicaciones web.
-                    <br/>
-                    <br/>
-                    <strong><a href="#2" className="opacity-100 p-4 bg-black text-white py-2 font-bold rounded-xl tracking-wider text-start" style={{width: "200px"}}>Continuar leyendo</a></strong>
+                    <div className="font-thin">
+                        Durante el año 2023 comencé a actualizar mis conocimientos en el área informática, decidiéndome por
+                        el desarrollo de aplicaciones como una forma de aportar al desarrollo de las empresas e instituciones
+                        con una mirada hacia los clientes, de lo que desean y -a mi parecer- de lo que necesitan.
+                        <br/><br/>
+                        Adicionalmente, comienzo con el desarrollo de una escuela de programación para jóvenes, de manera de
+                        entregarles herramientas digitales que les permitan el desarrollo de aplicaciones web.
+                    </div>
+
+                    <div className="hidden md:mt-auto md:flex md:flex-col">
+                        <div className="flex flex-row justify-between">
+                            <a href="#3" >
+                                <FontAwesomeIcon className="w-10 h-10" icon={faArrowLeft}/>
+                            </a>
+                            <a href="#2" className="flex w-60 h-10 text-accent font-bold rounded-xl tracking-wider justify-center items-center text-center border-2">
+                                Continuar leyendo
+                            </a>
+                            <a href="#2" >
+                                <FontAwesomeIcon className="w-10 h-10" icon={faArrowRight}/>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="2">
-            <div className="min-h-screen flex flex-col md:flex-row px-10 md:px-20 pt-20">
-                <div className="w-full pr-5 md:w-1/2 items-center" >
-                    <Image src="/spot2.jpg" alt="Historia 2" width={640} height={570}/>
-                    <br/>
+        <section id="2"  className="md:pt-[96px]">
+            <div className="flex flex-col md:flex-row py-4">
+                <div className="flex pb-4 text-xl justify-center font-bold md:hidden">
+                    1994 2021
                 </div>
-                <div className="w-full md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
-                    <div className="animate__animated animate__backInRight font-bold">
-                        2021 - 1994
+                <div className="w-full md:w-1/2 px-2 md:px-16 flex justify-center">
+                    <Image  src="/spot2.jpg" alt="Historia 2"/>
+                </div>
+                <div className="w-full md:w-1/2 px-2 md:px-16 text-medium leading-leading-[0.5rem] flex flex-col justify-between">
+                    <div className="hidden md:flex md:mt-0 md:text-xl md:font-bold">
+                        1994 - 2021
                     </div>
                     <br/>
+                    <div className="font-thin">
                     Durante este periodo me dediqué a la gestión de pequeñas y medianas empresas, siendo gerente de operaciones,
                     de desarrollo y gerente general de diferentes empresas de servicios en las áreas de transporte, obras civiles,
                     minería (6 años), logística (2 años), tecnologías de la información (8 años) y deportes y recreación (11 años).
                     En el año 2021 renuncié voluntariamente a mi último trabajo para dedicarme a diversos proyectos de crecimiento
                     personal.
-                    <br/>
-                    <br/>
-                    <strong><a href="#3" className="p-4 bg-black text-white py-2 font-bold rounded-xl tracking-wider text-start opacity-100" style={{width: "200px"}}>Continuar leyendo</a></strong>
+                    </div>
+
+                    <div className="hidden md:mt-auto md:flex md:flex-col">
+                            <div className="flex flex-row justify-between">
+                                <a href="#1" >
+                                    <FontAwesomeIcon className="w-10 h-10" icon={faArrowLeft}/>
+                                </a>
+                                <a href="#3" className="flex w-60 h-10 text-accent font-bold rounded-xl tracking-wider justify-center items-center text-center border-2">
+                                    Continuar leyendo
+                                </a>
+                                <a href="#3" >
+                                    <FontAwesomeIcon className="w-10 h-10" icon={faArrowRight}/>
+                                </a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </section>
+        
 
-        <section id="3">
-            <div className="flex flex-col md:flex-row px-10 md:px-20 pt-20">
-                <div className="w-full pr-5 md:w-1/2 items-center" >
-                    <Image src="/spot3.jpg" alt="Historia 3" width={640} height={485}/>
-                    <br/>
+        <section id="3"  className="md:pt-[96px]">
+            <div className="flex flex-col md:flex-row py-4">
+                <div className="flex pb-4 text-xl justify-center font-bold md:hidden">
+                    1983 - 1994
                 </div>
-                <div className="w-full md:w-1/2 text-lg md:pr-10 opacity-80 pb-10">
-                    <div className="animate__animated animate__backInRight font-bold">
-                        1994 - 1984
+                <div className="w-full md:w-1/2 px-2 md:px-16 flex justify-center">
+                    <Image  src="/spot3.jpg" alt="Historia 3"/>
+                </div>
+                <div className="w-full md:w-1/2 px-2 md:px-16 text-medium leading-leading-[0.5rem] flex flex-col justify-between">
+                    <div className="hidden md:flex md:mt-0 md:text-xl md:font-bold">
+                    1983 - 1994
                     </div>
-                    <br />
+                    <br/>
+                    <div className="font-thin">
                     Durante esos años fui Ingeniero de Sistemas (4 años) y posteriormente Jefe de Procesamiento de Datos en
                     la Universidad de Concepción (6 años). A comienzos de los años noventa trabajé en la incorporación de esta
                     universidad como nodo secundario de la Internet en Chile. Asistí a diversos congresos en USA de la Internet
                     Society, donde -entre otros- se mostró el primer prototipo del NCSA Mosaic.
-                    <br />
-                    <br />
+                    <br/>
+                    <br/>
                     ** El navegador Mosaic o NCSA Mosaic
                     fue el primer navegador web gráfico disponible para visualizar páginas web en sistemas operativos como Mac,
                     Windows u otros. Este navegador web fue creado en enero de 1993, en el National Center for Supercomputing
                     Applications.
-                    <br/>
-                    <br />
-                    <strong><a href="#1" className="p-4 bg-black text-white py-2 font-bold rounded-xl tracking-wider text-start opacity-100" style={{width: "200px"}}>ir al comienzo</a></strong>
+                    </div>
+
+                    <div className="hidden md:mt-auto md:flex md:flex-col">
+                            <div className="flex flex-row justify-between">
+                                <a href="#2" >
+                                    <FontAwesomeIcon className="w-10 h-10" icon={faArrowLeft}/>
+                                </a>
+                                <a href="#1" className="flex w-60 h-10 text-accent font-bold rounded-xl tracking-wider justify-center items-center text-center border-2">
+                                    Continuar leyendo
+                                </a>
+                                <a href="#1" >
+                                    <FontAwesomeIcon className="w-10 h-10" icon={faArrowRight}/>
+                                </a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </section>
-
-    </div>
+    </>
     )
 }
 

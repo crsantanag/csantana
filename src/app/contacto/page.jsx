@@ -2,27 +2,20 @@
 import {CircularProgress} from "@nextui-org/react";
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
 import { useState } from 'react'
-import 'animate.css'
+import '../assets/styles.css'
 
 export default function Contacto () {
 
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
+
     const [espera, setEspera] = useState (false)
-    const [exito, setExito] = useState (false)
-    const [error, setError] = useState (false)
+    const [exito, setExito]   = useState (false)
+    const [error, setError]   = useState (false)
 
-    function esperar () {
-        return (
-            <CircularProgress aria-label="Enviando ..." />
-        );
-    }
-
-
-    function limpiar () {
-
-        return
-    }
-    
+    const [name, setName]       = useState('');
+    const [email, setEmail]     = useState('');
+    const [message, setMessage] = useState('');
+ 
     async function handleSubmit(event) {
         event.preventDefault();
 
@@ -38,13 +31,19 @@ export default function Contacto () {
                 method: 'post',
                 body: formData,
             });
+
             if (!response.ok) {
-                console.log("Upsss...")
+                console.log("Error... ")
                 throw new Error(`Respuesta: ${response.status}`);
             }
+
             const responseData = await response.json();
             setEspera (false)
             setExito  (true)
+
+            setName    ('');
+            setEmail   ('');
+            setMessage ('');
             
         } catch (err) {
             console.error(err);
@@ -54,31 +53,48 @@ export default function Contacto () {
     }
 
     return (
-        <div className="bg-white flex flex-col items-center">
+        <div className="flex flex-col items-center pt-[96px]">
 
-            <form onSubmit={handleSubmit} className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
-                <div className="mb-4 flex flex-col w-600 text-center ">
-                    <div className="animate__animated animate__bounceInRight text-xl font-bold">
+            <form onSubmit={handleSubmit} className="w-full md:w-2/5 pt-4">
+                <div className="mb-4 flex flex-col justify-center text-center mx-2 md:mx-0">
+                    <div className="text-xl font-bold">
                         Contacto
                     </div>
                     <br/>
                     <h3>¿ALGUNA PREGUNTA O COMENTARIO?</h3>
-                    No dudes en contactarme. <br/>
-                    Te responderé a la brevedad.
-                    <br/>
+                    No dudes en contactarme, <br/>
+                    te responderé a la brevedad.
+                    <br/><br/>
                     <hr/>
                     <br/>
                     <label className="text-start" htmlFor="form-name">Su nombre </label>
-                    <input id="form-name" autoComplete="name" maxLength={50} size="lg" name="name" className="py-2 text-black bg-slate-200 rounded-lg"/>
+                    <input  id="form-name" 
+                            required 
+                            autoComplete="name" 
+                            name="name" 
+                            className="py-2 font-thin text-black rounded-lg w-auto border border-white px-[5px]"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}/>
                     <br/>
-                    <label className="text-start" htmlFor="form-email">Su Email:</label>
-                    <input id="form-email" required autoComplete="email" maxLength={80} name="email" type="email" className="py-2 text-black bg-slate-200  rounded-lg"/>
+                    <label className="text-start" htmlFor="form-email">Su Email</label>
+                    <input  id="form-email" 
+                            required 
+                            autoComplete="email" 
+                            name="email" type="email" 
+                            className="py-2 font-thin text-black rounded-lg border border-white px-[5px]"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}/>
                     <br/>
-                    <label className="text-start" htmlFor="form-message">Mensaje: </label>
-                    <textarea id="form-message" required name="message" rows={5} className="py-2 text-black bg-slate-200  rounded-lg"/>
+                    <label className="text-start" htmlFor="form-message">Mensaje </label>
+                    <textarea   id="form-message" 
+                                required name="message" 
+                                rows={5} className="py-2 font-thin  text-black rounded-lg border border-white px-[10px]"
+                                value={message}
+                                onChange={(e) => setMessage(e.target.value)}/>
                     <br/>
                 </div>
-                <button type="submit" className="p-2 bg-gray-800 text-white px-4 py-2 font-bold rounded-lg tracking-wider text-start" >
+                <button type="submit" 
+                        className="py-2 px-[10px] mx-2 md:mx-0 bg-accent text-black font-bold rounded-lg tracking-wider text-star border border-white">
                     Enviar mensaje
                 </button>
                 <br/>
@@ -86,27 +102,28 @@ export default function Contacto () {
             </form>
 
             <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
-                <ModalContent className="text-start items-start">
+                <ModalContent className="text-start items-center bg-accent text-black">
                     {(onClose) => (
                         <>
-                            <ModalHeader className="flex flex-col gap-1">
+                            <ModalHeader className="flex flex-col gap-1 text-center ">
                                 Enviando mensaje a Carlos Santana
                             </ModalHeader>
                             <ModalBody>
                             { espera     &&  <CircularProgress /> }
                             </ModalBody>
                             { exito     &&  
-                            <ModalFooter className="text-start items-start leading-6">
+                            <ModalFooter className="bg-black text-white mb-4 rounded-md text-center items-center leading-6">
                                 <p className="pt-1">Mensaje enviado exitosamente</p>
                                 <Button className="leading-7"onPress={onClose}>
                                     Cerrar
                                 </Button>
+
                             </ModalFooter> }
                             { error    &&  
-                            <ModalFooter className="text-start items-start">
+                            <ModalFooter className="bg-black text-white mb-4 rounded-md text-center items-center leading-6">
                                 <p>No se pudo enviar el mensaje <br/>
                                 inténtalo nuevamente</p>
-                                <Button color="primary" onPress={onClose}>
+                                <Button onPress={onClose}>
                                     Cerrar
                                 </Button>
                             </ModalFooter> }
@@ -114,6 +131,7 @@ export default function Contacto () {
                     )}
                 </ModalContent>
             </Modal>
+
         </div>
     )
 }

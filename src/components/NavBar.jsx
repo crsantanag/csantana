@@ -1,119 +1,98 @@
 "use client"
-import Image from 'next/image'
-import {User} from "@nextui-org/react";
-import {Navbar, NavbarMenu, NavbarMenuToggle, NavbarMenuItem, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+import { Button} from "@nextui-org/react";
+import { Image, Navbar, NavbarMenu, NavbarMenuToggle, NavbarMenuItem, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faBars } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
+import '../app/assets/styles.css'
 
 export default function NavBar () {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isSoundOn, setIsSoundOn] = useState(false);
-
-    const toggleSound = () => {
-        setIsSoundOn(!isSoundOn);
-    };
 
     const menuItems = [
-        "Quién soy",
+        "Inicio",
         "Mi historia",
         "Mis proyectos",
+        "Mi CV",
         "Contáctame",
-        "Mi CV"
     ];
 
     const menuPages = [
         "/",
         "/historia",
         "/proyectos",
+        "/CarlosSantana.pdf",
         "/contacto",
-        "/CarlosSantana.pdf"
     ];
 
     return (
 
-        <Navbar disableAnimation 
-                isBordered 
+    <div>
+        <Navbar isBordered 
                 isMenuOpen={isMenuOpen}
                 onMenuOpenChange={setIsMenuOpen}
-                className="bg-slate-200"> 
+                height="96px"
+                maxWidth="full"
+                className=" bg-slate-950 text-white fixed top-0 w-full flex justify-end"> 
 
-            <NavbarContent className="md:hidden" justify="start">
-                <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
-            </NavbarContent>
-
-            <NavbarMenu>
+            <NavbarMenu className="bg-black">
                 {menuItems.map((item, index) => (
-                    <NavbarMenuItem key={`${item}-${index}`}>
-                        <Link href={`${menuPages[index]}`} className="w-full" size="xl">
+                    <NavbarMenuItem key={`${item}-${index}`} className="bg-black">
+                        <Link 
+                            className={index == menuItems.length - 1 ? 
+                                "w-40 bg-accent text-black font-bold border-accent justify-center items-center border-2 rounded-xl" :
+                                "w-40 bg-black text-accent font-bold border-accent justify-center items-center border-2 rounded-xl"}
+                                style={{ padding: '5px' }}
+                                href={`${menuPages[index]}`} 
+                            >
                         {item}
+                        {index == menuItems.length - 1 ? <FontAwesomeIcon className="w-6 h-6 pl-2" icon={faEnvelope}/> : " "}
                         </Link>
                     </NavbarMenuItem>
                 ))}
             </NavbarMenu>
 
-            <div >
-                <User 
-                    className='items-start' 
-                    name="Carlos Santana"
-                    description={(
-                    <Link href="/" size='sm' color="white">
-                        Full Stack Developer
-                    </Link> )}
-                    avatarProps={{ src: "/csantana.jpg" }}
-                />
-            </div>
+            <Link href="/">
+                <Image className="lg:ml-10 px-0" src="/csantana.jpg" height={80} alt="Foto"/>
+            </Link>
+            
+            <NavbarContent className="text-white md:hidden" justify="end"> 
+                <NavbarMenuToggle  aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="text-accent border-accent rounded-full"/>
+            </NavbarContent>
 
-            <NavbarContent className="hidden sm:flex gap-4" justify="lef">
+            <NavbarContent className="hidden lg:ml-0 lg:mr-10 md:flex gap-2 font-extrabold " justify="end">
                 <NavbarItem>
-                    <Link href="/" color="foreground" >
-                        Quién soy
+                    <Link href="/">
+                        <Button className="bg-black text-accent border-accent border-2">Inicio</Button>
                     </Link>
                 </NavbarItem>
                 <NavbarItem >
-                <Link href="/historia" color="foreground" >
-                        Mi historia
+                    <Link href="/historia">
+                        <Button className="bg-black text-accent border-accent border-2">Mi historia</Button>
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link href="/proyectos" color="foreground" >
-                        Mis proyectos
+                    <Link href="/proyectos">
+                        <Button className="bg-black text-accent border-accent border-2">Mis proyectos</Button>
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link href="/contacto" color="foreground" >
-                        Contáctame
+                    <Link href="/CarlosSantana.pdf">
+                        <Button className="bg-black text-accent border-accent border-2">Mi CV</Button>
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link href="/CarlosSantana.pdf" color="foreground" >
-                        Mi CV
+                    <Link href="/contacto">
+                        <Button className="bg-accent text-black font-bold">Contáctame
+                                <FontAwesomeIcon className="w-10 h-10" icon={faEnvelope}/>
+                        </Button>
                     </Link>
-                </NavbarItem>
+                    </NavbarItem>
             </NavbarContent>
 
-            <div className="flex items-end bg-slate-200 sm:flex gap-2 space-x-2">
-                <a href="https://www.linkedin.com/in/carlos-santana-11019014/" target="_blank" rel="noopener noreferrer"> <Image src="/logo-in.jpg"  width={35} height={35} alt="Logo de Linked In"/> </a>
-                <a href="https://github.com/crsantanag" target="_blank" rel="noopener noreferrer"> <Image src="/logo-github.jpg"  width={35} height={35} alt="Logo de GitHub"/> </a>
-
-{/*
-                <button onClick={toggleSound}>
-                    {isSoundOn ?  (
-                        <Image src="/music.jpg" alt="Encender Sonido" width={35} height={35}/>
-                        )  : (
-                        <Image src="/music.jpg" alt="Apagar Sonido" width={35} height={35}/>
-                    )}
-                </button> 
-                {isSoundOn && (
-                    <audio autoPlay loop>
-                        <source src="/HonorHim.wav" type="audio/wav" />
-                    </audio>
-                )}
-*/}
-
-            </div>
         </Navbar>
 
-
-
+    </div>
     )
 }
