@@ -41,11 +41,12 @@ const Store = () => {
                     <br/>
                     <div className="font-thin">
                         <div className="text-justify mb-4">
-                            <ul>
+                            <ul className="list-none pl-2">
                                 {texto1.map((item, index) => (
                                 <li key={index}>
                                     <div className="flex flex-row">
-                                        <div>
+                                        <div className="before:content-['-'] before:mr-1"></div>
+                                        <div className="mr-3">
                                             {item}
                                         </div>
                                     </div>
@@ -53,10 +54,9 @@ const Store = () => {
                                 ))}
                             </ul>
                         </div>
-                        <div>
-                            Adicionalmente, comienzo con el desarrollo de una escuela de programación para jóvenes, de manera de
-                            entregarles herramientas digitales que les permitan el desarrollo de aplicaciones web.
-                        </div>
+                        <br/><br/>
+                        Adicionalmente, comienzo con el desarrollo de una escuela de programación para jóvenes, de manera de
+                        entregarles herramientas digitales que les permitan el desarrollo de aplicaciones web.
                     </div>
 
                     <div className="hidden md:mt-auto md:flex md:flex-col">
