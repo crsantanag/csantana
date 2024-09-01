@@ -43,6 +43,7 @@ const Store = () => {
                                     <div>
                                         {item}
                                     </div>
+                                    <br/>
                                 </li>
                                 ))}
                             </ul>
@@ -86,6 +87,7 @@ const Store = () => {
                                     <div>
                                         {item}
                                     </div>
+                                    <br/>
                                 </li>
                                 ))}
                             </ul>
