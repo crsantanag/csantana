@@ -4,6 +4,26 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import '../assets/styles.css'
 
 const Store = () => {
+
+    const texto1 = [
+        "Durante el año 2023 comencé a actualizar mis conocimientos en el área informática, decidiéndome por el desarrollo de aplicaciones como una forma de aportar al desarrollo de las empresas e instituciones con una mirada hacia los clientes, de lo que desean y -a mi parecer- de lo que necesitan."
+        ];
+    
+    const texto2 = [
+        "Usa solo una página (Single Page Application)",
+        "Usa Local Storage para almacenar los registros",
+        "Tiene una sección para crear elementos",
+        "Tiene una sección para ver todos los elementos creados",
+        "Tiene una sección para modificar elementos",
+        "Tiene una sección para borrar elementos"
+        ];
+    
+    const texto3 = [
+        "Usa un ambiente de desarrollo con Node.js",
+        "Utiliza Chart.js para el desarrollo de gráficas",
+        "Realiza una conexión a una API externa para extraer datos"
+        ];
+
     return (
     <>
         <section id="1" className="pt-[96px]">
@@ -20,12 +40,23 @@ const Store = () => {
                     </div>
                     <br/>
                     <div className="font-thin">
-                        Durante el año 2023 comencé a actualizar mis conocimientos en el área informática, decidiéndome por
-                        el desarrollo de aplicaciones como una forma de aportar al desarrollo de las empresas e instituciones
-                        con una mirada hacia los clientes, de lo que desean y -a mi parecer- de lo que necesitan.
-                        <br/><br/>
-                        Adicionalmente, comienzo con el desarrollo de una escuela de programación para jóvenes, de manera de
-                        entregarles herramientas digitales que les permitan el desarrollo de aplicaciones web.
+                        <div className="text-justify mb-4">
+                            <ul>
+                                {texto1.map((item, index) => (
+                                <li key={index}>
+                                    <div className="flex flex-row">
+                                        <div>
+                                            {item}
+                                        </div>
+                                    </div>
+                                </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div>
+                            Adicionalmente, comienzo con el desarrollo de una escuela de programación para jóvenes, de manera de
+                            entregarles herramientas digitales que les permitan el desarrollo de aplicaciones web.
+                        </div>
                     </div>
 
                     <div className="hidden md:mt-auto md:flex md:flex-col">
