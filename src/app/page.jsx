@@ -17,7 +17,7 @@ export default function Homepage() {
                         <Image className="w-full h-auto object-contain" src="/homepage.jpg" alt="Portada"/>
                     </div>
 
-                    <div className="w-full md:w-1/2 px-2 lg:px-16 flex flex-col justify-between">
+                    <div className="flex flex-col justify-between w-full md:w-1/2 px-2 lg:px-16 ">
 
                         <div className="mt-5 lg:mt-0 text-4xl font-semibold">
                             Carlos Santana<span className="text-accent">.</span>{/* Comentado {windowWidth} */}
@@ -27,7 +27,6 @@ export default function Homepage() {
                             Profesional con más de 30 años de experiencia en la dirección y gestión estratégica de pequeñas y
                             medianas empresas (entre 20 y 150 personas).
                         </div>
-
 
                         <div className="mt-5 lg:mt-auto flex flex-col sm:flex-row pantalla1">
                             <div className="w-full md:w-1/2 text-lg font-bold">
