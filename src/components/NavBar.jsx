@@ -12,9 +12,9 @@ export default function NavBar () {
 
     const menuItems = [
         "Inicio",
-        "Mi historia",
-        "Mis proyectos",
-        "Mi CV",
+        "Historia",
+        "Proyectos",
+        "CV",
         "Contáctame",
     ];
 
@@ -57,29 +57,32 @@ export default function NavBar () {
                 <Image className="lg:ml-10 px-0" src="/csantana.jpg" height={80} alt="Foto"/>
             </Link>
             
-            <NavbarContent className="text-white md:hidden" justify="end"> 
-                <NavbarMenuToggle  aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="text-accent border-accent rounded-full"/>
+            <NavbarContent className="text-accent md:hidden" justify="end"> 
+                <div className="flex flex-col h-14 text-center items-center ">
+                    Menú
+                    <NavbarMenuToggle  aria-label={isMenuOpen ? "Close menu" : "Open menu"} className="text-accent border-accent rounded-full"/>
+                </div>
             </NavbarContent>
 
             <NavbarContent className="hidden lg:ml-0 lg:mr-10 md:flex gap-2 font-extrabold " justify="end">
                 <NavbarItem>
                     <Link href="/">
-                        <Button className="bg-black text-accent border-accent border-2">Inicio</Button>
+                        <Button className="sm:w-20 lg:w-28 bg-black text-accent border-accent border-2">Inicio</Button>
                     </Link>
                 </NavbarItem>
                 <NavbarItem >
                     <Link href="/historia">
-                        <Button className="bg-black text-accent border-accent border-2">Mi historia</Button>
+                        <Button className="w-28 bg-black text-accent border-accent border-2">Historia</Button>
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
                     <Link href="/proyectos">
-                        <Button className="bg-black text-accent border-accent border-2">Mis proyectos</Button>
+                        <Button className="w-28 bg-black text-accent border-accent border-2">Proyectos</Button>
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
                     <Link href="/CarlosSantana.pdf">
-                        <Button className="bg-black text-accent border-accent border-2">Mi CV</Button>
+                        <Button className="sm:w-20 lg:w-28 bg-black text-accent border-accent border-2">CV</Button>
                     </Link>
                 </NavbarItem>
                 <NavbarItem>

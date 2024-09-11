@@ -28,7 +28,7 @@ const Store = () => {
                     Por qué Full Stack Developer
                 </div>
                 <div className="w-full md:w-1/2 px-2 md:px-16 flex justify-center">
-                    <Image src="/spot1.jpg" alt="Historia 1"/>
+                    <Image className="border-white border-2" src="/spot1.jpg" alt="Historia 1"/>
                 </div>
                 <div className="w-full md:w-1/2 px-2 md:px-16 text-medium leading-leading-[0.5rem] flex flex-col justify-between">
                     <div className="hidden md:flex md:mt-0 md:text-xl md:font-bold">
@@ -36,7 +36,7 @@ const Store = () => {
                     </div>
                     <br/>
                     <div className="font-thin">
-                        <div className="text-justify mb-4">
+                        <div className=" mb-4">
                             <ul className="list-none pl-2">
                                 {texto1.map((item, index) => (
                                 <li key={index}>
@@ -72,7 +72,7 @@ const Store = () => {
                     1994 2021
                 </div>
                 <div className="w-full md:w-1/2 px-2 md:px-16 flex justify-center">
-                    <Image  src="/spot2.jpg" alt="Historia 2"/>
+                    <Image  className="border-white border-2" src="/spot2.jpg" alt="Historia 2"/>
                 </div>
                 <div className="w-full md:w-1/2 px-2 md:px-16 text-medium leading-leading-[0.5rem] flex flex-col justify-between">
                     <div className="hidden md:flex md:mt-0 md:text-xl md:font-bold">
@@ -80,7 +80,7 @@ const Store = () => {
                     </div>
                     <br/>
                     <div className="font-thin">
-                        <div className="text-justify mb-4">
+                        <div className=" mb-4">
                             <ul className="list-none pl-2">
                                 {texto2.map((item, index) => (
                                 <li key={index}>
@@ -117,7 +117,7 @@ const Store = () => {
                     1983 - 1994
                 </div>
                 <div className="w-full md:w-1/2 px-2 md:px-16 flex justify-center">
-                    <Image  src="/spot3.jpg" alt="Historia 3"/>
+                    <Image className="border-white border-2" src="/spot3.jpg" alt="Historia 3"/>
                 </div>
                 <div className="w-full md:w-1/2 px-2 md:px-16 text-medium leading-leading-[0.5rem] flex flex-col justify-between">
                     <div className="hidden md:flex md:mt-0 md:text-xl md:font-bold">
@@ -125,7 +125,7 @@ const Store = () => {
                     </div>
                     <br/>
                     <div className="font-thin">
-                        <div className="text-justify mb-4">
+                        <div className=" mb-4">
                             <ul className="list-none pl-2">
                                 {texto3.map((item, index) => (
                                 <li key={index}>

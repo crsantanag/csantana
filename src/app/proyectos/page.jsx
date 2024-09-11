@@ -53,7 +53,7 @@ const Proyectos = () => {
                         Landing page de Negocio
                     </div>
                     <div className="w-full md:w-1/2 px-2 md:px-16 flex justify-center">
-                        <Image src="/01.jpg" alt="Proyecto 1"/>
+                        <Image className="border-white border-2" src="/01.jpg" alt="Proyecto 1"/>
                     </div>
                     <div className="w-full md:w-1/2 px-2 md:px-16 text-medium leading-leading-[0.5rem] flex flex-col justify-between">
                         <div className="hidden md:flex md:mt-0 md:text-xl md:font-bold">
@@ -63,7 +63,7 @@ const Proyectos = () => {
                         <div className="font-thin">
                             <strong>Este proyecto contiene una sola página que permite:</strong>  <br/>
 
-                            <div className="text-justify mb-4">
+                            <div className=" mb-4">
                                 <ul className="list-none pl-2">
                                     {items1.map((item, index) => (
                                     <li key={index}>
@@ -109,7 +109,7 @@ const Proyectos = () => {
                         Aplicación CRUD
                     </div>
                     <div className="w-full md:w-1/2 px-2 md:px-16 flex justify-center">
-                        <Image src="/02.jpg" alt="Proyecto 2" />
+                        <Image className="border-white border-2" src="/02.jpg" alt="Proyecto 2" />
                     </div>
                     <div className="w-full md:w-1/2 px-2 md:px-16 text-medium leading-leading-[0.5rem] flex flex-col justify-between">
                         <div className="hidden md:flex md:mt-0 md:text-xl md:font-bold">
@@ -119,7 +119,7 @@ const Proyectos = () => {
                             Este es un proyecto que permite la manipulación de datos.<br/><br/>
                             <strong>Sus características contemplan:</strong><br/>
 
-                            <div className="text-justify mb-4">
+                            <div className=" mb-4">
                                 <ul className="list-none pl-2">
                                     {items2.map((item, index) => (
                                     <li key={index}>
@@ -166,7 +166,7 @@ const Proyectos = () => {
                         Tablero de Datos (Dashboard)
                     </div>
                     <div className="w-full md:w-1/2 px-2 md:px-16 flex justify-center">
-                        <Image src="/03.jpg" alt="Proyecto 3" />
+                        <Image className="border-white border-2" src="/03.jpg" alt="Proyecto 3" />
                     </div>
                     <div className="w-full md:w-1/2 px-2 md:px-16 text-medium leading-leading-[0.5rem] flex flex-col justify-between">
                         <div className="hidden md:flex md:mt-0 md:text-xl md:font-bold">
@@ -179,7 +179,7 @@ const Proyectos = () => {
                             <strong>mindicator.cl</strong> y se grafican algunas variables. <br/><br/>
                             <strong>Tecnologías:</strong><br/>
 
-                            <div className="text-justify mb-4">
+                            <div className=" mb-4">
                                 <ul className="list-none pl-2">
                                     {items3.map((item, index) => (
                                     <li key={index}>
@@ -227,7 +227,7 @@ const Proyectos = () => {
                         Reserva de Mesas
                     </div>
                     <div className="w-full md:w-1/2 px-2 md:px-16 flex justify-center">
-                        <Image src="/04.jpg" alt="Proyecto 4" />
+                        <Image className="border-white border-2" src="/04.jpg" alt="Proyecto 4" />
                     </div>
                     <div className="w-full md:w-1/2 px-2 md:px-16 text-medium leading-leading-[0.5rem] flex flex-col justify-between">
                         <div className="hidden md:flex md:mt-0 md:text-xl md:font-bold">
@@ -236,7 +236,7 @@ const Proyectos = () => {
                         <div className="font-thin">
                             <strong>Sus características contemplan:</strong><br/>
 
-                            <div className="text-justify mb-4">
+                            <div className=" mb-4">
                                 <ul className="list-none pl-2">
                                     {items4.map((item, index) => (
                                     <li key={index}>
@@ -285,7 +285,7 @@ const Proyectos = () => {
                         Aplicación e-Commerce
                     </div>
                     <div className="w-full md:w-1/2 px-2 md:px-16 flex justify-center">
-                        <Image src="/05.jpg" alt="Proyecto 5" />
+                        <Image className="border-white border-2" src="/05.jpg" alt="Proyecto 5" />
                     </div>
                     <div className="w-full md:w-1/2 px-2 md:px-16 text-medium leading-leading-[0.5rem] flex flex-col justify-between">
                         <div className="hidden md:flex md:mt-0 md:text-xl md:font-bold">
@@ -294,7 +294,7 @@ const Proyectos = () => {
                         <div className="text-medium font-thin">
                             <strong>Sus características contemplan:</strong>
 
-                            <div className="text-justify mb-4">
+                            <div className=" mb-4">
                                 <ul className="list-none pl-2">
                                     {items5.map((item, index) => (
                                     <li key={index}>
